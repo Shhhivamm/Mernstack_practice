@@ -1,67 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Table</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Roster</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 1rem; }
+    .table-wrap { max-width: 100%; overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; min-width: 800px; }
+    caption { font-size: 1.25rem; margin-bottom: 0.5rem; font-weight: 600; text-align: left; }
+    th, td { border: 1px solid #ddd; padding: 0.5rem 0.75rem; text-align: left; }
+    thead th { background: #f4f6f8; }
+    tbody tr:nth-child(even) { background: #fbfbfb; }
+    tfoot td { font-weight: 600; background: #fafafa; }
+    .muted { color: #666; font-size: 0.95rem; }
+    .center { text-align: center; }
+    a.email { color: #0066cc; text-decoration: none; }
+  </style>
 </head>
 <body>
-    <table border ="1">
-        <thead>
-            <th>Student Id</th>
-            <th>Student name</th>
-            <th>Gender</th>
-            <th>Age</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1234</td>
-                <td>Shivam</td>
-                <td>Male</td>
-                <td>21</td>
-            </tr>
-            <tr>
-                <td>1235</td>
-                <td>Nikita</td>
-                <td>Female</td>
-                <td rowspan="3">21</td>
-            </tr>
-            <tr>
-                <td>1236</td>
-                <td>Maggie</td>
-                <td>Female</td>
-                <!-- <td>11</td> -->
-            </tr>
-            <tr>
-                <td>1237</td>
-                <td>Aakash</td>
-                <td>Trans</td>
-                <!-- <td>32</td> -->
-            </tr>
-        </tbody>
+  <div class="table-wrap">
+    <table aria-describedby="student-roster-desc">
+      <caption>Student Roster — Spring Semester</caption>
+      <p id="student-roster-desc" class="muted">List of enrolled students with majors, GPA and enrollment dates.</p>
+      <thead>
+        <tr>
+          <th scope="col">Student ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Gender</th>
+          <th scope="col" class="center">Age</th>
+          <th scope="col">Major</th>
+          <th scope="col" class="center">GPA</th>
+          <th scope="col">Enrollment Date</th>
+          <th scope="col">Email</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1234</td>
+          <td>Shivam Patel</td>
+          <td>Male</td>
+          <td class="center">21</td>
+          <td>Computer Science</td>
+          <td class="center">3.75</td>
+          <td>2023-08-21</td>
+          <td><a class="email" href="mailto:shivam@example.com">shivam@example.com</a></td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>1235</td>
+          <td>Nikita Sharma</td>
+          <td>Female</td>
+          <td class="center">21</td>
+          <td>Business</td>
+          <td class="center">3.42</td>
+          <td>2022-09-01</td>
+          <td><a class="email" href="mailto:nikita@example.com">nikita@example.com</a></td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>1236</td>
+          <td>Maggie Chen</td>
+          <td>Female</td>
+          <td class="center">20</td>
+          <td>Biology</td>
+          <td class="center">3.90</td>
+          <td>2024-01-10</td>
+          <td><a class="email" href="mailto:maggie@example.com">maggie@example.com</a></td>
+          <td>Probation</td>
+        </tr>
+        <tr>
+          <td>1237</td>
+          <td>Aakash Verma</td>
+          <td>Non-binary</td>
+          <td class="center">22</td>
+          <td>Design</td>
+          <td class="center">3.10</td>
+          <td>2021-06-14</td>
+          <td><a class="email" href="mailto:aakash@example.com">aakash@example.com</a></td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>1238</td>
+          <td>Leah Kim</td>
+          <td>Female</td>
+          <td class="center">23</td>
+          <td>Mathematics</td>
+          <td class="center">3.88</td>
+          <td>2020-09-03</td>
+          <td><a class="email" href="mailto:leah@example.com">leah@example.com</a></td>
+          <td>Graduated</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">Total students</td>
+          <td class="center">3.61</td>
+          <td colspan="3" class="center">5 students listed</td>
+        </tr>
+      </tfoot>
     </table>
-<br>
-    <table border = "3">
-        <tr>
-            <td>Column 1</td>
-            <td>Column 2</td>
-            <td>column 3</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Row 1 cell1</td>
-            <td>Row 1 cell 2</td>
-            <td>Row 1 cell 3</td>
-        </tr>
-        <tr>
-            
-            <td>Row 2 cell 2</td>
-            <td>Row 2 cell 3</td>
-        </tr>
-        <tr>
-            <td colspan="3">Row 3 cell 1</td>
-            
-        </tr>
-    </table>
+  </div>
 </body>
-
 </html>
