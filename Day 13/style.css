@@ -1,0 +1,25 @@
+/* h1{
+    background-color: yellow;
+    text-align: center;
+}
+p{
+    background-color: aquamarine;
+} */
+#article1{
+    background-color: burlywood;
+}
+.paraclass{
+    color: aliceblue;
+    background-color: slategray;
+}
+/* this is called grouping of selectors */
+p,article{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+h1#newheading{
+    text-align: center;
+    background-color: rgb(165, 104, 42);
+    color: antiquewhite;
+    
+}
