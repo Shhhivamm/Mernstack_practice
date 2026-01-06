@@ -6,3 +6,12 @@ p{
     line-height: 40px;
     
 }
+#firstpara{
+    background-color: aquamarine;
+}
+#secpara{
+    background-color: rgb(154, 90, 90);
+}
+#thirdpara{
+    background-color: #f2baf2;
+}
