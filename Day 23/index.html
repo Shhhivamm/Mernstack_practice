@@ -18,14 +18,14 @@
             
         }
         .box {
-            width: 200px;
+            width: 100px;
             height: 100px;
-            background-color: burlywood;
+            background-color: rgb(229, 135, 11);
             border: 2px solid brown;
-            border-radius: 8px;
+            border-radius: 100px;
             position: relative;
 
-            animation: cornerMove 6s linear infinite;
+            animation: cornerMove 2s linear infinite;
         }
 
         @keyframes cornerMove {
@@ -35,11 +35,11 @@
             }
             25% {
                 top: 0;
-                left: calc(100vw - 200px);
+                left: calc(100vw - 100px);
             }
             50% {
                 top: calc(100vh - 100px);
-                left: calc(100vw - 200px);
+                left: calc(100vw - 100px);
             }
             75% {
                 top: calc(100vh - 100px);
