@@ -1,0 +1,14 @@
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: beige;
+    border: 2px solid rgb(215, 134, 36);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.box:hover{
+    /* width: 1000px; */
+    border-radius: 200px;
+    background-color: rgb(186, 128, 47) ;
+}
