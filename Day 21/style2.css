@@ -1,0 +1,32 @@
+        .container{
+            border: 3px solid black;
+            background-color: tan;
+            display: flex;
+            flex-direction: row;
+            width: 45%;
+
+        }
+        #boxleft{
+            background-color: bisque;
+            border: 2px solid black;
+            width: 50%;
+            margin: 3px;
+            padding: 3px;
+            display: flex;
+            flex-direction: column;
+        }
+        #boxright{
+            background-color: rgb(201, 214, 181);
+            border: 2px solid black;
+            width: 50%;
+            margin: 3px;
+            padding: 3px;
+        }
+        p{
+            border: 2px solid rgb(182, 102, 32);
+        }
+        @media (max-width:600px){
+            .container{
+                flex-direction: column;
+            }
+        }

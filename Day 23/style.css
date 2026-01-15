@@ -1,0 +1,46 @@
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: bisque;
+            border: 3px solid black;
+            
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(229, 135, 11);
+            border: 2px solid brown;
+            border-radius: 100px;
+            position: relative;
+
+            animation: cornerMove 2s linear infinite;
+        }
+
+        @keyframes cornerMove {
+            0% {
+                top: 0;
+                left: 0;
+            }
+            25% {
+                top: 0;
+                left: calc(100vw - 100px);
+            }
+            50% {
+                top: calc(100vh - 100px);
+                left: calc(100vw - 100px);
+            }
+            75% {
+                top: calc(100vh - 100px);
+                left: 0;
+            }
+            100% {
+                top: 0;
+                left: 0;
+    }
+}
