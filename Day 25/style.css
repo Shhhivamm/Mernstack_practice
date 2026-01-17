@@ -17,13 +17,14 @@
     justify-content: center;
     margin: auto;
     padding: 10px;
-    transition:  0.2s linear ;
+    transition:  2s linear ;
 }
 .box:hover{
     /* transform: rotate(45deg); */
     /* transform: rotate(-45deg); */
-    transform: scale(2) ;
+    /* transform: scale(2) ; */
     /* transform: skew(45deg); */
+    transform: translate(500px ,500px );
 }
 p{
     font-size: 25px;
