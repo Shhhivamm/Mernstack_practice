@@ -64,4 +64,9 @@ a{
 .contentBox{
     width: 70%;
     margin: auto;
+    border: 1px solid black;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
 }
