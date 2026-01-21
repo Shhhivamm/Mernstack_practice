@@ -26,13 +26,14 @@
 }
 nav{
     width: 100%;
+    padding-right: 2rem ;
 }
 #navlist{
     width: 100%;
     list-style: none;
     font-size: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     /* margin-left: 15px;
     margin-right: 15px; */
@@ -54,7 +55,6 @@ a{
    background-image: radial-gradient( circle farthest-corner at 32.7% 49.8%,  rgba(28,88,238,1) 0%, rgba(0,39,137,1) 100.2% );
     text-align: center;
     width: 100vw;
-
     min-height: 35px
 }
 .footerBox p{
@@ -64,10 +64,12 @@ a{
 .contentBox{
     width: 70%;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    box-shadow: 1px 1px 40px black;
     display: flex ;
     flex-direction: column;
-     gap: 100px
+    gap: 100px;
+    padding: 40px;
 } 
 .item{
     display: flex;
@@ -75,10 +77,56 @@ a{
     align-items: center;
 
 }
-
+.rightBox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.1s linear 0.1s;
+}
 
 .rightBox img{
     height: 300px;
     width: 300px;
     border-radius: 20px;
+    transition: all 0.1s linear 0.1s;
+}
+
+
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.leftBox h2{
+    font-size: 1.5rem;
+}
+.indbox{
+    font-size: 1.2rem;
+}
+.resbox{
+    font-size: 1.1rem;
+}
+.rightBox:hover{
+    scale: 1.1;
+}
+.rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(54, 53, 53, 0.359);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.1s linear 0.1s;
+
+}
+.rightBox:hover .overlay{
+    opacity: 1;
+}
+.rightBox .overlay span{
+    color: white;
+    font-size: 1.2rem;
 }
