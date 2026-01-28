@@ -20,7 +20,7 @@
         }
         .card{
             width: 400px;
-            height: 600px;
+            height: 650px;
             background-color: white;
             border-radius: 20px;
             display: flex;
@@ -48,7 +48,29 @@
             height: 10%;
             background-color: rgb(188, 222, 228); 
             border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
             
+        }
+        .leftbox{
+            width: fit-content;
+            display: flex;
+            gap: 15px;
+            height: 100%;
+            align-items: center;
+
+        }
+        .imgbox img{
+            height: 3rem;
+            width: 3rem;
+        }
+
+        .rightbox{
+            text-decoration: none;
+            align-items: center;
+            padding:20px ;
+            
+            justify-content: center;
         }
         #payment{
             width: 80%;
@@ -59,6 +81,13 @@
              box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
             
         }
+        .cancelbox a{
+            color: rgb(73, 73, 73);
+            font-weight: bold;
+            text-decoration: none;
+            font-size: large;
+        }
+
     </style>
 </head>
 <body>
@@ -71,11 +100,25 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit similique neque beatae quae omnis unde reiciendis. Repudiandae accusamus </p>
                 </div>
                 <div id="amountbox">
-
+                    <div class="leftbox">
+                        <div class="imgbox">
+                            <img src="music.png" alt="">
+                        </div>
+                        <div id="txtamount">
+                            <p>Amount</p>
+                            <p>$99.9 per year</p>
+                        </div>
+                    </div>
+                    <div class="rightbox">
+                        <a href="">Change</a>
+                    </div>
                 </div>
                 <button id="payment">
                     Proceed to Payment
                 </button>
+                <div class="cancelbox">
+                        <a href="">Cancel Order</a>
+                </div>   
         </div>
     </div>
 
