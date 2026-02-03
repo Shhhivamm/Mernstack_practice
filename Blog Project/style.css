@@ -19,8 +19,15 @@ body{
 }
 .header_title{
     margin-bottom: 1rem;
-    font-size: 1.7rem;
+    font-size:  2.5rem;
     line-height: 2rem;
     font-weight: 700;
     text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header_des{
+    max-width: 568px;
+    text-align: center;
+    color: rgb(99, 99, 99);
+    margin: 0 auto;
 }
