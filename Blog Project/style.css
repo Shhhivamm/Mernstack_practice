@@ -13,3 +13,14 @@ body{
     padding: 2rem 1rem;
     margin: 0 auto;
 }
+.header_container{
+    margin-bottom: 2.9rem;
+    
+}
+.header_title{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
