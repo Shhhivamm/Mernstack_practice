@@ -13,6 +13,9 @@ body{
     padding: 2rem 1rem;
     margin: 0 auto;
 }
+a{
+    text-decoration: none;
+}
 .header_container{
     margin-bottom: 2.9rem;
     
@@ -28,6 +31,42 @@ body{
 .header_des{
     max-width: 568px;
     text-align: center;
-    color: rgb(99, 99, 99);
+    color: rgb(122, 122, 122);
     margin: 0 auto;
+}
+.main{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(85, 85, 85);
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px;
+}
+.card_img_container{
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+}
+.card_img{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+.card_title_container{
+    display: flex;
+    flex-direction: column;
+
+}
+.card:hover .card_img{
+    transform: scale(1.025);
+    transition-duration: 0.5s;
+}
+.card_title{
+    font-size: 1rem;
+    font-weight: 600;
 }
