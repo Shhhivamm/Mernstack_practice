@@ -7,9 +7,11 @@
 body{
     height: 100%;
     width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 .container{
-    max-width: 95vw;
+    max-width: 80vw;
     padding: 2rem 1rem;
     margin: 0 auto;
 }
@@ -26,7 +28,7 @@ a{
     line-height: 2rem;
     font-weight: 700;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 .header_des{
     max-width: 568px;
@@ -34,17 +36,18 @@ a{
     color: rgb(122, 122, 122);
     margin: 0 auto;
 }
-.main{
+main{
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(4, 1fr);
 
 }
 .card{
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     border: 1px solid rgb(85, 85, 85);
-    border-radius: 2px;
+    border-radius: 5px;
     box-shadow: 0px 0px 5px;
 }
 .card_img_container{
@@ -85,6 +88,7 @@ a{
 .card_footer{
     display: flex;
     justify-content: space-between;
+    padding: 1.5rem;
 }
 .author_avatar{
     display: flex;
@@ -96,4 +100,31 @@ a{
     height: 2.5rem;
     width: 2.5rem;
     overflow: hidden;
+    border: 1px solid rgb(121, 119, 119);
+    border-radius: 50%;
+    background-color: rgb(224, 224, 224);
+}
+.author_des{
+    display: flex;
+    flex-direction: column;
+}
+.author_des .name{
+    color: rgb(57, 107, 255);
+    
+}
+.author_des .date{
+    color: rgb(149, 148, 148);
+}
+button{
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: .4rem .9rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+    background:#e64a19;
 }
