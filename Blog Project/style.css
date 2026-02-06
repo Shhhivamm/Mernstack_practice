@@ -86,3 +86,14 @@ a{
     display: flex;
     justify-content: space-between;
 }
+.author_avatar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.author_avatar_conatiner{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+}
