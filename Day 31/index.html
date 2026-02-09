@@ -4,7 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Grid Design</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .body{
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            gap: 1rem;
+            background-color: rgb(166, 166, 166);
+            padding: 4rem;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .item{
+            padding: 1rem;
+            border: 2px solid black;
+            background-color: rgb(57, 155, 155);
+
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -19,11 +44,7 @@
         <div class="item">I</div>
         <div class="item">J</div>
         <div class="item">K</div>
-        <div class="item">L</div>
-        <div class="item">M</div>
-        <div class="item">N</div>
-        <div class="item">O</div>
-        <div class="item">P</div>
+        <div class="item">l</div>
     </div>
 </body>
 </html>
