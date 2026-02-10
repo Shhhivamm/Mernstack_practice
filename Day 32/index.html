@@ -14,19 +14,61 @@
             width: 100%;
             height: 100%;
         }
+        .container{
+            background-color: rgb(207, 206, 206);
+            padding: 4rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1rem;
+            perspective: 1000px;
+        }
+        .item{
+            height: 150px;
+            width: 150px;
+            background-color: rgb(88, 88, 173);
+            padding: 2rem;
+            border: 2px solid black;
+        }
+        #RotateX:hover{
+            transform: rotateX(45deg);
+        }
+        #RotateY:hover{
+            transform: rotateY(45deg);
+        }
+        #RotateZ:hover{
+            transform: rotateZ(45deg);
+        }
+        #TranslateX:hover{
+            transform: translateX(100px);
+        }
+        #TranslateY:hover{
+            transform: translateY(100px);
+        }
+        #Translatez:hover{
+            transform: perspective(300px)  translateZ(100px);
+        }
+        #ScaleX:hover{
+            transform: scaleX(1.5);
+        }
+        #ScaleY:hover{
+            transform: scaleY(1.5);
+        }
+        #ScaleZ:hover{
+            transform: scaleZ(1.5) rotateY(30deg);
+        }
     </style>
 </head>
 <body>
-    <div class="conatiner">
-        <div class="item">RotateX</div>
-        <div class="item">RotateY</div>
-        <div class="item">Rotatez</div>
-        <div class="item">TranslateX</div>
-        <div class="item">TranslateY</div>
-        <div class="item">Translatez</div>
-        <div class="item">ScaleX</div>
-        <div class="item">ScaleY</div>
-        <div class="item">ScaleZ</div>
+    <div class="container">
+        <div class="item" id="RotateX">RotateX</div>
+        <div class="item" id="RotateY">RotateY</div>
+        <div class="item" id="RotateZ">RotateZ</div>
+        <div class="item" id="TranslateX">TranslateX</div>
+        <div class="item" id="TranslateY">TranslateY</div>
+        <div class="item" id="Translatez">Translatez</div>
+        <div class="item" id="ScaleX">ScaleX</div>
+        <div class="item" id="ScaleY">ScaleY</div>
+        <div class="item" id="ScaleZ">ScaleZ</div>
     </div>
 </body>
 </html>
