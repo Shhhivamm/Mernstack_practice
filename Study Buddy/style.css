@@ -18,3 +18,15 @@
     font-family: 'Inter', sans-serif;
     text-decoration: none;
 }
+body{
+    height: 100vh;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 2rem;
+}
+.header-content{
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
