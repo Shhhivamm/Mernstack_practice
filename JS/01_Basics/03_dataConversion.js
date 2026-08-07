@@ -20,9 +20,26 @@
 // "" => false; "shivam" => true
 // null or undefined ==> false
 
-let anynumber = null
+// let anynumber = null
 
-let stringnum = String(anynumber)
+// let stringnum = String(anynumber)
 
-console.log(stringnum);
-console.log(typeof stringnum);
+// console.log(stringnum);
+// console.log(typeof stringnum);
+
+// ************************ operations *******************//
+
+// console.log(2+2)
+// console.log(2-2)
+// console.log(2*2)
+// console.log(2**3)
+// console.log(2/2)
+// console.log(2%2)
+
+// console.log("1" + 2 + 2);  // => 122
+// console.log(1 + 2 + "2");   //=> 32 whyyyyyyy?
+
+let gameCounter = 100
+gameCounter++;
+++gameCounter;
+console.log(gameCounter);
